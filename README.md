@@ -1,3 +1,2 @@
 # FinanSee
-
-Dashboard Financeiro
+Veja. Entenda. Evolua.
