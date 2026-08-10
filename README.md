@@ -1,1 +1,3 @@
-# finance-dashboard
+# FinanSee
+
+Dashboard Financeiro
