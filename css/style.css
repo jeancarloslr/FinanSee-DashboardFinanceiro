@@ -1,8 +1,21 @@
-*{
-    margin: 0px;
+:root{ 
+    --background-dark: #0f1217;
+    --background-more-dark: #08090c;
+    --blue: #1D4EB6;
+    --light-blue: #35D2EA;
 }
 
-body{
+*{
+    margin: 0px;
+    background-color: var(--background-more-dark);
+  
+}
+
+h1, h2, p{
+    color: white;
+}
+
+body{   
  display: flex;
  flex-direction: row;
 }
@@ -14,7 +27,7 @@ body{
     row-gap: 100px;
     width: 20vw;
     height: 100vh;
-    background-color: rgb(6, 1, 1);
+    background-color: var(--background-dark)
 }
 
 .header-menu{
@@ -25,11 +38,17 @@ body{
 nav{
     height: 30vh;
     width: 10vw;
-    background-color: red;
 }
 
 ul{
     display: flex;
     flex-direction: column;
     justify-content: baseline;
+    list-style: none;
+    gap: 20px;
+}
+
+ li > a{
+    text-decoration: none;
+    font: 400 20px/1.5 "Inter", sans-serif;
 }
