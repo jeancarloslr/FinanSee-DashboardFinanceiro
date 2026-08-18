@@ -1,8 +1,14 @@
 :root{ 
+
+    /*fontes*/
+    --font-main: "Inter", sans-serif;
+
+    /*cores*/
     --background-dark: #0f1217;
     --background-more-dark: #08090c;
     --blue: #1D4EB6;
     --light-blue: #05D5F8;
+
 }
 
 *{
@@ -17,6 +23,7 @@ body{
  display: flex;
  flex-direction: row;
  background-color: var(--background-more-dark);
+ font-family: var(--font-main);
 }
 
 .principal{
@@ -66,7 +73,7 @@ ul{
 
  li a{
     text-decoration: none;
-    font: 200 17px/1.5 "Arial";
+    font-family: var(--font-main);
     color: white;
     display: flex;
     gap: 8px;
@@ -87,6 +94,11 @@ li img{
   padding: 25px;
 }
 
+#User{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
 .commands{
     display: flex;
     flex-direction: row;
@@ -94,13 +106,16 @@ li img{
 }
 
 #periodo{
+    font-family: var(--font-main);
     padding: 10px;
+    display: flex;
+    align-items: center;
     width: 150px;
     height: 40px;
     border: none;
     border: 1px solid var(--light-blue);
     border-radius: 5px;
-    background-color: #08090b;
+    background-color: var(--background-dark);
     color: white;
 }
 
@@ -112,3 +127,8 @@ li img{
     height: 40px;
     background-color: var(--light-blue);
 }
+
+
+/*resumo financeiro(cards)*/
+
+
