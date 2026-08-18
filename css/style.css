@@ -2,7 +2,7 @@
     --background-dark: #0f1217;
     --background-more-dark: #08090c;
     --blue: #1D4EB6;
-    --light-blue: #35D2EA;
+    --light-blue: #05D5F8;
 }
 
 *{
@@ -75,4 +75,40 @@ ul{
 li img{
     width: 24px;
     height: 24px;
+}
+
+
+.header-principal{
+  display: flex;
+  justify-content: space-between;
+    
+  width: 80vw;
+  height: 15vh;
+  padding: 25px;
+}
+
+.commands{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#periodo{
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    background-color: #08090b;
+    color: white;
+}
+
+.btn-nova-transacao{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--light-blue);
 }
