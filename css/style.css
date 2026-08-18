@@ -90,7 +90,7 @@ li img{
   justify-content: space-between;
     
   width: 80vw;
-  height: 15vh;
+  height: 5vh;
   padding: 25px;
 }
 
@@ -130,5 +130,30 @@ li img{
 
 
 /*resumo financeiro(cards)*/
+
+.resumo-financeiro{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 70px;
+    width: 80vw;
+    height: 20vh;
+}
+
+.resumo-financeiro article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 400px;
+    height: 100px;
+    padding-left: 25px;
+
+    background-color: var(--background-dark);
+
+    border-radius: 5px;
+}
+
+
 
 
