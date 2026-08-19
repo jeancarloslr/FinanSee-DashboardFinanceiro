@@ -6,9 +6,10 @@
     /*cores*/
     --background-dark: #0f1217;
     --background-more-dark: #08090c;
-    --blue: #1D4EB6;
     --light-blue: #05D5F8;
-
+    --green: #38A446;
+    --red: #ED3A32;
+    --yellow: #EA9C1B;
 }
 
 *{
@@ -147,12 +148,50 @@ li img{
 
     width: 400px;
     height: 100px;
-    padding-left: 25px;
+    padding: 14px;
 
     background-color: var(--background-dark);
 
     border-radius: 5px;
 }
+
+
+.resumo-financeiro > article > h2{
+    font-size: 14px;
+}
+
+.resumo-financeiro > article > .valor-card{
+    font-size: 30px;
+}
+
+#receita-card{
+    color: var(--green);
+}
+
+#despesas-card{
+    color: var(--red);
+}
+
+#saldo-card{
+    color: var(--light-blue);
+}
+
+#transacoes-card{
+    color: var(--yellow);
+}
+
+.info-card{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
 
 
 
