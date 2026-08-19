@@ -138,7 +138,7 @@ li img{
     padding: 25px;
     gap: 70px;
     width: 80vw;
-    height: 20vh;
+    height: 17vh;
 }
 
 .resumo-financeiro article{
@@ -185,7 +185,30 @@ li img{
     padding-bottom: 10px;
 }
 
+/*GRÁFICOS*/
 
+.graficos{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    gap: 70px;
+    width: 80vw;
+    height: 30vh;
+}
+
+.grafico{
+    width: 720px;
+    height: 200px;
+    background-color: var(--background-dark);
+
+    border-radius: 5px;
+}
+
+.grafico > figcaption{
+    font-size: 14px;
+    color: white;
+    padding: 15px;
+}
 
 
 
