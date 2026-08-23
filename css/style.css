@@ -88,6 +88,18 @@ li img{
     height: 24px;
 }
 
+/*lightmode e paragrafo*/
+.endAside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 150px;     
+}
+
+/* botão dark/lightmode */
+
+
+
 
 .header-principal{
   display: flex;
@@ -229,7 +241,6 @@ li img{
     background-color: var(--background-dark);
     border: 1px solid var(--color-border);
     border-radius: 10px;
-
 }
 
 
