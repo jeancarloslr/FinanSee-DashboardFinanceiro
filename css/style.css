@@ -96,9 +96,13 @@ li img{
     padding-top: 150px;     
 }
 
-/* botão dark/lightmode */
-
-
+/*botão dark/lightmode*/
+.toggle{
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
 
 
 .header-principal{
