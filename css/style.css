@@ -4,6 +4,8 @@
     --font-main: "Inter", sans-serif;
 
     /*cores*/
+    --texto-principal: #ffffff;
+    --texto-segundario: #616469;
     --color-border: #252a32;
     --background-dark: #0f1217;
     --background-more-dark: #08090c;
@@ -17,7 +19,7 @@
 }
 
 h1, h2, p{
-    color: white;
+    color: var(--texto-principal);
 }
 
 body{   
@@ -29,7 +31,11 @@ body{
 
 /*light theme*/
 .light-theme{
-    background-color: azure;
+    --color-border: #E2E8F0;
+    --background-more-dark: #f5faff;
+    --background-dark: #ffffff;
+    --texto-principal: #0F172A;
+    --texto-segundario: #64748B;
 }
 
 
