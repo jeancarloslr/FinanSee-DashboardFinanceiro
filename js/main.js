@@ -1,7 +1,9 @@
 //starting with dark/light theme.
-const toggle = document.QuerySelect('#theme-toggle');
+const toggle = document.querySelector('#theme-toggle');
 
-//bug
- toggle.addEventListener('click', ()=>{
-    console.log('its working');
+ toggle.addEventListener('change', ()=>{
+   document.body.classList.toggle("light-theme")
  })
+
+
+
