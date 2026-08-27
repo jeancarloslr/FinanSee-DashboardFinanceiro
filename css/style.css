@@ -5,7 +5,7 @@
 
     /*cores*/
     --texto-principal: #ffffff;
-    --texto-segundario: #616469;
+    --texto-segundario: #ffffff;
     --color-border: #252a32;
     --background-dark: #0f1217;
     --background-more-dark: #08090c;
@@ -54,7 +54,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
     padding: 30px;
 }
 
@@ -88,7 +87,7 @@ ul{
  li a{
     text-decoration: none;
     font-family: var(--font-main);
-    color: white;
+    color: var(--texto-segundario);
     display: flex;
     gap: 8px;
 }
