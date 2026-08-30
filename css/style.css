@@ -189,7 +189,7 @@ li img{
     border: 1px solid var(--light-blue);
     border-radius: 5px;
     background-color: var(--background-dark);
-    color: white;
+    color: var(--texto-principal);
 }
 
 .btn-nova-transacao{
