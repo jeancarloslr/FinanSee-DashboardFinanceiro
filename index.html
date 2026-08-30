@@ -150,6 +150,64 @@
      </aside>
 
     </main>
+
+    <dialog class="modal-nova-transacao">
+        <form>
+
+            <header>
+               <h2>Nova transação</h2>
+              <button type="button">X</button>
+            </header>
+
+            <label>
+              Descrição
+              <input type="text" name="descricao">
+            </label>
+
+            <label>
+              Valor
+              <input type="number" name="valor">
+            </label>
+
+            <fieldset>
+            <legend>Tipo</legend>
+
+             <label>
+                 <input type="radio" name="tipo" value="receita">
+                 Receita
+             </label>
+
+             <label>
+                 <input type="radio" name="tipo" value="despesa">
+                 Despesa
+             </label>
+            </fieldset>
+
+        <label>
+           Categoria
+           <select name="categoria">
+             <option value="alimentacao">Alimentação</option>
+             <option value="transporte">Transporte</option>
+             <option value="moradia">Moradia</option>
+             <option value="lazer">Lazer</option>
+             <option value="outros">Outros</option>
+           </select>
+
+        </label>
+
+
+        <label>
+          Data
+          <input type="date" name="data">
+        </label>
+
+        <footer>
+         <button type="button">Cancelar</button>
+         <button type="submit">Salvar</button>
+        </footer>
+
+        </form>
+    </dialog>
   
 
     <script src="js/main.js"></script>
