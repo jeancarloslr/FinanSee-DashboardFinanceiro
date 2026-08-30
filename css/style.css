@@ -13,6 +13,7 @@
     --green: #38A446;
     --red: #ED3A32;
     --yellow: #EA9C1B;
+    --fundo-light-container: #1e2229;
 }
 
 /*light theme*/
@@ -150,10 +151,17 @@ li img{
     transform: translateX(21px);
 }
 
+
+.light-mode-container{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    color: var(--texto-segundario)
+}
+
 .header-principal{
   display: flex;
   justify-content: space-between;
-    
   width: 80vw;
   height: 3vh;
   padding: 25px;
@@ -265,13 +273,13 @@ li img{
     width: 720px;
     height: 200px;
     background-color: var(--background-dark);
-     border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
 }
 
 .grafico > figcaption{
     font-size: 14px;
-    color: white;
+    color: var(--texto-principal);
     padding: 15px;
 }
 
@@ -292,4 +300,3 @@ li img{
     border-radius: 10px;
 }
 
-}
