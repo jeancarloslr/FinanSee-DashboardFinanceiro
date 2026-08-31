@@ -6,6 +6,14 @@ const btnNewTransation = document.querySelector('.btn-nova-transacao')
 const modal = document.querySelector('.modal-nova-transacao')
 const btnCloseModal = document.querySelector('.close-transation')
 
+//form getting data
+const formTransacao = document.querySelector('#form-transacao');
+
+formTransacao.addEventListener('submit', (event) =>{
+   event.preventDefault;
+});
+
+
 
 btnNewTransation.addEventListener('click', ()=>{
    modal.showModal()
