@@ -11,9 +11,8 @@ const formTransacao = document.querySelector('#form-transacao');
 
 formTransacao.addEventListener('submit', (event) =>{
    event.preventDefault;
+   const dados = new FormData(formTransacao);
 });
-
-
 
 btnNewTransation.addEventListener('click', ()=>{
    modal.showModal()
