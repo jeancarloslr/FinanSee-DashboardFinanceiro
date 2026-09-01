@@ -10,8 +10,20 @@ const btnCloseModal = document.querySelector('.close-transation')
 const formTransacao = document.querySelector('#form-transacao');
 
 formTransacao.addEventListener('submit', (event) =>{
-   event.preventDefault;
+   event.preventDefault();
+
    const dados = new FormData(formTransacao);
+
+   const transacao = {
+      descricao: dados.get('descricao'),
+      valor: dados.get('valor'),
+      tipo: dados.get('tipo'),
+      categoria: dados.get('categoria'),
+      data: dados.get('data')
+   };
+
+   console.log(transacao);
+
 });
 
 btnNewTransation.addEventListener('click', ()=>{
