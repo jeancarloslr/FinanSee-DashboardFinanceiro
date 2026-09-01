@@ -18,7 +18,7 @@ formTransacao.addEventListener('submit', (event) =>{
    //objeto, cada objeto tem propriedades com valores
    const transacao = {
       descricao: dados.get('descricao'),
-      valor: dados.get('valor'),
+      valor: parseFloat(dados.get('valor')),
       tipo: dados.get('tipo'),
       categoria: dados.get('categoria'),
       data: dados.get('data')
