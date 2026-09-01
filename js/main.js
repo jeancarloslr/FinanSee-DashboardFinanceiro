@@ -8,12 +8,14 @@ const btnCloseModal = document.querySelector('.close-transation')
 
 //form getting data
 const formTransacao = document.querySelector('#form-transacao');
+const transacoes = [];
 
 formTransacao.addEventListener('submit', (event) =>{
    event.preventDefault();
 
    const dados = new FormData(formTransacao);
 
+   //objeto, cada objeto tem propriedades com valores
    const transacao = {
       descricao: dados.get('descricao'),
       valor: dados.get('valor'),
@@ -22,7 +24,8 @@ formTransacao.addEventListener('submit', (event) =>{
       data: dados.get('data')
    };
 
-   console.log(transacao);
+   transacoes.push(transacao)
+   console.log(transacoes);
 
 });
 
