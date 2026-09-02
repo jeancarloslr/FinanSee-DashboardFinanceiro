@@ -26,7 +26,7 @@ formTransacao.addEventListener('submit', (event) =>{
 
    transacoes.push(transacao)
    console.log(transacoes);
-
+   localStorage.setItem('transacoes', JSON.stringify());
 });
 
 btnNewTransation.addEventListener('click', ()=>{
@@ -37,9 +37,9 @@ btnCloseModal.addEventListener('click', ()=>{
    modal.close();
 });
 
- toggle.addEventListener('change', ()=>{
-   document.body.classList.toggle("light-theme")
- })
+toggle.addEventListener('change', ()=>{
+  document.body.classList.toggle("light-theme")
+});
 
 
 
