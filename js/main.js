@@ -26,7 +26,7 @@ formTransacao.addEventListener('submit', (event) =>{
 
    transacoes.push(transacao)
    console.log(transacoes);
-   localStorage.setItem('transacoes', JSON.stringify());
+   localStorage.setItem('transacoes', JSON.stringify(transacoes));
 });
 
 btnNewTransation.addEventListener('click', ()=>{
