@@ -25,8 +25,13 @@ formTransacao.addEventListener('submit', (event) =>{
    };
 
    transacoes.push(transacao)
-   console.log(transacoes);
+   //setting into local storage
    localStorage.setItem('transacoes', JSON.stringify(transacoes));
+
+   //getting data of local storage
+   const dadosSalvos = localStorage.getItem('transacoes');
+   console.log(dadosSalvos);
+   
 });
 
 btnNewTransation.addEventListener('click', ()=>{
