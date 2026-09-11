@@ -30,7 +30,7 @@ formTransacao.addEventListener('submit', (event) =>{
 
    //getting data of local storage
    const dadosSalvos = localStorage.getItem('transacoes');
-   console.log(dadosSalvos);
+   const transacoes = JSON.parse(dadosSalvos);
    
 });
 
