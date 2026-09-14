@@ -8,7 +8,14 @@ const btnCloseModal = document.querySelector('.close-transation')
 
 //form getting data
 const formTransacao = document.querySelector('#form-transacao');
-const transacoes = [];
+
+//getting data of local storage
+const dadosSalvos = localStorage.getItem('transacoes');
+const transacoes = dadosSalvos
+    ? JSON.parse(dadosSalvos)
+    : [];
+
+    console.log(transacoes);
 
 formTransacao.addEventListener('submit', (event) =>{
    event.preventDefault();
@@ -26,12 +33,7 @@ formTransacao.addEventListener('submit', (event) =>{
 
    transacoes.push(transacao)
    //setting into local storage
-   localStorage.setItem('transacoes', JSON.stringify(transacoes));
-
-   //getting data of local storage
-   const dadosSalvos = localStorage.getItem('transacoes');
-   const transacoes = JSON.parse(dadosSalvos);
-   
+   localStorage.setItem('transacoes', JSON.stringify(transacoes));   
 });
 
 btnNewTransation.addEventListener('click', ()=>{
