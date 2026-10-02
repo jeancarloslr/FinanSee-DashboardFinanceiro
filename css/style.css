@@ -192,6 +192,7 @@ li img{
     color: var(--texto-principal);
 }
 
+/*NOVA TRANSAÇAO*/
 .btn-nova-transacao{
     padding: 10px;
     border: none;
@@ -201,6 +202,27 @@ li img{
     background-color: var(--light-blue);
 }
 
+.modal-nova-transacao::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-nova-transacao{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+
+    border: none;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background-color: var(--background-dark);
+
+}
 
 /*resumo financeiro(cards)*/
 
