@@ -17,7 +17,6 @@
                 <li><a href=""><img src="assets/icons/dashboard.png" alt="Dashboard">
                 <span>Dashboard</span>
                 </a></li>
-
                 <li><a href="#">
                     <img src="assets/icons/transações.png" alt="transações">
                     <span>Transações</span>
@@ -28,7 +27,6 @@
                    <span>Categorias</span>
                 </a>
                 </li>
-
                 <li><a href="#">
                     <img src="assets/icons/relatorio.png" alt="relatorio">
                     <span>Relatórios</span>
@@ -62,16 +60,13 @@
          <h1 class="welcome-user">Olá, <strong id="User">Jean</strong>!</h1>
          <p>Aqui está o resumo das suas finanças.</p>
         </div>
-
         <div class="commands">
          <select id="periodo">
           <option>Maio de 2025</option>
          </select>
-
         <button type='button' class="btn-nova-transacao">+ Nova Transação</button>
         </div>
       </header>
-
       <section class="resumo-financeiro">
         <article>
             <h2>Receitas</h2>
@@ -97,9 +92,7 @@
             <p class="info-card">Total de lançamentos</p>
         </article>
       </section>
-
 <section class="graficos">
-
     <figure class="grafico">
         <figcaption>Despesas por Categoria</figcaption>
         <canvas id="despesasCategoria"></canvas>
@@ -152,6 +145,7 @@
     </main>
 
     <dialog class="modal-nova-transacao">
+        
         <form id="form-transacao">
             <header>
                <h2>Nova transação</h2>
@@ -192,6 +186,7 @@
              <option value="outros">Outros</option>
            </select>
         </label>
+
         <label>
           Data
           <input type="date" name="data">

@@ -17,7 +17,7 @@ const transacoes = dadosSalvos
 
     console.log(transacoes);
 
-formTransacao.addEventListener('submit', (event) =>{
+    formTransacao.addEventListener('submit', (event) =>{
    event.preventDefault();
 
    const dados = new FormData(formTransacao);
