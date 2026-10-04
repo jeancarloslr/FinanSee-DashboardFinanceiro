@@ -6,6 +6,9 @@ const btnNewTransation = document.querySelector('.btn-nova-transacao')
 const modal = document.querySelector('.modal-nova-transacao')
 const btnCloseModal = document.querySelector('.close-transation')
 
+//tabela
+const tabelaTransacoes = document.querySelector('tbody');
+
 //form getting data
 const formTransacao = document.querySelector('#form-transacao');
 
@@ -17,7 +20,7 @@ const transacoes = dadosSalvos
 
     console.log(transacoes);
 
-    formTransacao.addEventListener('submit', (event) =>{
+formTransacao.addEventListener('submit', (event) =>{
    event.preventDefault();
 
    const dados = new FormData(formTransacao);
