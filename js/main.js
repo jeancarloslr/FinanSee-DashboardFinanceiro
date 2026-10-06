@@ -39,6 +39,10 @@ formTransacao.addEventListener('submit', (event) =>{
    localStorage.setItem('transacoes', JSON.stringify(transacoes));   
 });
 
+transacoes.forEach((transacao) => {
+
+});
+
 btnNewTransation.addEventListener('click', ()=>{
    modal.showModal()
 });
