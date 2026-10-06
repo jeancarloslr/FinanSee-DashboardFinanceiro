@@ -18,9 +18,10 @@ const transacoes = dadosSalvos
     ? JSON.parse(dadosSalvos)
     : [];
 
-    console.log(transacoes);
+   console.log(transacoes);
 
 formTransacao.addEventListener('submit', (event) =>{
+
    event.preventDefault();
 
    const dados = new FormData(formTransacao);
@@ -40,7 +41,27 @@ formTransacao.addEventListener('submit', (event) =>{
 });
 
 transacoes.forEach((transacao) => {
+   
+   const linha = document.createElement("tr");
+   const dataCont = document.createElement("td");
+   const descricaoCont = document.createElement("td");
+   const categoriaCont = document.createElement("td");
+   const tipoCont = document.createElement("td");
+   const valorCont = document.createElement("td");
+  
+   dataCont.textContent = transacao.data;
+   descricaoCont.textContent = transacao.descricao;
+   valorCont.textContent = transacao.valor;
+   tipoCont.textContent = transacao.tipo;
+   categoriaCont.textContent = transacao.categoria;
 
+   linha.appendChild(dataCont);
+   linha.appendChild(descricaoCont);
+   linha.appendChild(categoriaCont);
+   linha.appendChild(tipoCont);
+   linha.appendChild(valorCont);
+
+   tabelaTransacoes.appendChild(linha)
 });
 
 btnNewTransation.addEventListener('click', ()=>{
