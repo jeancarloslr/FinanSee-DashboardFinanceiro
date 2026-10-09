@@ -18,8 +18,7 @@ const transacoes = dadosSalvos
     ? JSON.parse(dadosSalvos)
     : [];
 
-   console.log(transacoes);
-
+RenderizarTabela();    
 formTransacao.addEventListener('submit', (event) =>{
 
    event.preventDefault();
@@ -38,9 +37,15 @@ formTransacao.addEventListener('submit', (event) =>{
    transacoes.push(transacao)
    //setting into local storage
    localStorage.setItem('transacoes', JSON.stringify(transacoes));
+
+   RenderizarTabela();
 });
    
-transacoes.forEach((transacao) => {
+function RenderizarTabela(){
+   
+   tabelaTransacoes.innerHTML = "";
+
+   transacoes.forEach((transacao) => {
    const linha = document.createElement("tr");
    const dataCont = document.createElement("td");
    const descricaoCont = document.createElement("td");
@@ -62,6 +67,7 @@ transacoes.forEach((transacao) => {
 
    tabelaTransacoes.appendChild(linha)
 });
+}
 
 btnNewTransation.addEventListener('click', ()=>{
    modal.showModal()
