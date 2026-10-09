@@ -37,11 +37,10 @@ formTransacao.addEventListener('submit', (event) =>{
 
    transacoes.push(transacao)
    //setting into local storage
-   localStorage.setItem('transacoes', JSON.stringify(transacoes));   
+   localStorage.setItem('transacoes', JSON.stringify(transacoes));
 });
-
-transacoes.forEach((transacao) => {
    
+transacoes.forEach((transacao) => {
    const linha = document.createElement("tr");
    const dataCont = document.createElement("td");
    const descricaoCont = document.createElement("td");
