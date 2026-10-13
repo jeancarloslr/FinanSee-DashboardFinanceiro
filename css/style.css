@@ -314,9 +314,6 @@ li img{
     margin-left: 25px;
     padding: 10px;
 
-    display: flex;
-    flex-direction: column;
-
     background-color: var(--background-dark);
     border: 1px solid var(--color-border);
     border-radius: 10px;
@@ -331,4 +328,10 @@ li img{
     font-size: 13px;
     font-weight: 300;
     color: var(--texto-principal);
+    width: 100%;
+}
+
+th, td{
+  text-align: left;
+  padding: 7px;
 }
