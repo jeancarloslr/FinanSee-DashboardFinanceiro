@@ -65,11 +65,10 @@ function RenderizarTabela(){
    linha.appendChild(tipoCont);
    linha.appendChild(valorCont);
 
-
-
    //tabela botão de excluir transação
-   const btnExcluirTransacao = document.createElement("button");
-   btnExcluirTransacao.innerHTML = "Click me"
+   var btnExcluirTransacao = document.createElement("button");
+   btnExcluirTransacao.innerHTML = '<img src="../assets/icons/delete.png" </img>';
+   linha.appendChild(btnExcluirTransacao);
 
    tabelaTransacoes.appendChild(linha)
 });
