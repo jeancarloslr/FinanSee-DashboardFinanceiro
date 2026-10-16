@@ -69,7 +69,7 @@ function RenderizarTabela(){
    var btnExcluirTransacao = document.createElement("button");
    btnExcluirTransacao.innerHTML = '<img src="../assets/icons/delete.png" </img>';
    linha.appendChild(btnExcluirTransacao);
-
+   btnExcluirTransacao.classList.add('btn-excluir');
    tabelaTransacoes.appendChild(linha)
 });
 }

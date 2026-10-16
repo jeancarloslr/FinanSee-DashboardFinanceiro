@@ -335,3 +335,14 @@ th, td{
   text-align: left;
   padding: 7px;
 }
+
+.btn-excluir{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-excluir > img{
+    width: 25px;
+    height: 25px;
+}
