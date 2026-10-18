@@ -70,7 +70,15 @@ function RenderizarTabela(){
    btnExcluirTransacao.innerHTML = '<img src="../assets/icons/delete.png" </img>';
    linha.appendChild(btnExcluirTransacao);
    btnExcluirTransacao.classList.add('btn-excluir');
-   tabelaTransacoes.appendChild(linha)
+   tabelaTransacoes.appendChild(linha)   
+
+   btnExcluirTransacao.addEventListener('click', () =>{
+      const index = transacoes.indexOf(transacao);
+      transacoes.splice(index, 1);
+      console.log(transacoes);
+      
+      localStorage.setItem('transacoes', JSON.stringify(transacoes));
+   });
 });
 }
 
