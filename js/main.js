@@ -78,6 +78,7 @@ function RenderizarTabela(){
       console.log(transacoes);
       
       localStorage.setItem('transacoes', JSON.stringify(transacoes));
+      RenderizarTabela();
    });
 });
 }
